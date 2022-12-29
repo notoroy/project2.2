@@ -14,6 +14,7 @@ def conversion(title):
 
 
 def index(request):
+    
     return render(request, "encyclopedia/index.html", {
         "entries": util.list_entries()
     })
